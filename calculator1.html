@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Calculator </title>
+<script>
+			
+				function Addition()
+				{
+				     var num1=document.getElementById ("fnum1").value * 1.0;
+			         var num2=document.getElementById ("fnum2").value * 1.0;
+					document.getElementById("result").innerHTML = num1+num2;
+				}
+				function Multiplikation ()
+				{	
+				    var num1=document.getElementById ("fnum1").value * 1.0;
+			        var num2=document.getElementById ("fnum2").value * 1.0;
+					document.getElementById("result").innerHTML =num1*num2 ;
+				}
+				function Subtrahieren ()
+				{	
+				    var num1=document.getElementById ("fnum1").value * 1.0;
+			        var num2=document.getElementById ("fnum2").value * 1.0;
+					document.getElementById("result").innerHTML =num1-num2 ;
+				}
+				function Division ()
+				{	
+				    var num1=document.getElementById ("fnum1").value * 1.0;
+			        var num2=document.getElementById ("fnum2").value * 1.0;
+					document.getElementById("result").innerHTML =num1/num2 ;
+				}
+				function Potenz ()
+				{	
+				    var num1=document.getElementById ("fnum1").value * 1.0;
+			        var num2=document.getElementById ("fnum2").value * 1.0;
+					document.getElementById("result").innerHTML =num1^(num2) ;
+				}
+				function Mittelwert ()
+				{	
+				    var num1=document.getElementById ("fnum1").value * 1.0;
+			        var num2=document.getElementById ("fnum2").value * 1.0;
+					document.getElementById("result").innerHTML = (num1+num2)/2;
+				}
+</script>
+		</head>
+			<body>
+					<p>
+						<form>
+							<label for="numf1">Erste Zahl:</label>
+							<input type="text" id="fnum1" name="numf1"><br><br>
+							<label for="numf2">Zweite Zahl:</label>
+							<input type="text" id="fnum2" name="numf2"><br><br>
+							</form>
+					</p>	
+							<button onclick="Addition()">
+												Addition
+							</button>
+							<button onclick="Multiplikation()">
+												Multiplikation
+							</button>
+							<button onclick="Subtrahieren()">
+												Subtrahieren
+							</button>
+							<button onclick="Division()">
+												Division
+							</button>
+							<button onclick="Potenz()">
+												Potenz
+							</button>
+							<button onclick="Mittelwert()">
+												Mittelwert
+							</button>					
+							
+							<p id=result >
+							</p>
+								
+			</body>
